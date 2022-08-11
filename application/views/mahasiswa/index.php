@@ -18,7 +18,7 @@
 		<h3>Mahasiswa</h3>
     <?php foreach ($mahasiswa as $mhs) :?>
     <ul class="list-group">
-				<li class="list-group-item"><?= $mhs['nama']?> <a href=<?= base_url() . "mahasiswa/hapus/" . $mhs['id'] ?> class="badge badge-danger float-right" onclick = "return confirm('ya')" >delete</a></li>
+				<li class="list-group-item"><?= $mhs['nama']?> <a href=<?= base_url() . "mahasiswa/hapus/" . $mhs['id'] ?> class="badge badge-danger float-right" onclick = "return confirm('yakin akan menghapus')" >delete</a></li>
     </ul>
 			<?php endforeach ?>
 		</div>
