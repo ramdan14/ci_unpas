@@ -52,3 +52,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'home';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+
+$route['mhs'] = "mahasiswa";
+$route['baru'] = "mahasiswa/tambah";
+$route['edit-mahasiswa/(:any)'] = "mahasiswa/edit/$1";
+$route [ 'mahasiswa/(:any)' ]  =  'mahasiswa/detail/$1' ;

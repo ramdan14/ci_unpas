@@ -1,4 +1,6 @@
 <div class="container mt-2">
+	<?php echo $this->uri->segment(2); ?>
+
 <div class="row">
   </div>
   <div class="row">

@@ -1,4 +1,5 @@
 <div class="container mt-2">
+	<?php echo $this->uri->segment(1); ?>
   <div class="row">
     <div class="col-md-6">
       <?php if ($this->session->flashdata('flash')) : ?>
@@ -35,8 +36,8 @@
 				<li class="list-group-item">
 					<?= $mhs['nama']?> 
 					<a href=<?= base_url() . "mahasiswa/hapus/" . $mhs['id'] ?> class="badge badge-danger float-right m-1" onclick = "return confirm('yakin akan menghapus')" >delete</a>
-					<a href=<?= base_url() . "mahasiswa/detail/" . $mhs['id'] ?> class="badge badge-info float-right m-1">detail</a>
-					<a href=<?= base_url() . "mahasiswa/edit/" . $mhs['id'] ?> class="badge badge-warning float-right m-1" >edit</a>
+					<a href=<?= base_url() . "mahasiswa/" . $mhs['id']?> class="badge badge-info float-right m-1">detail</a>
+					<a href=<?= base_url() . "edit-mahasiswa/" . $mhs['id'] ?> class="badge badge-warning float-right m-1" >edit</a>
 				</li>
     </ul>
 			<?php endforeach ?>
